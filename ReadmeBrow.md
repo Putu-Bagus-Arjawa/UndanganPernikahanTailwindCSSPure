@@ -24,7 +24,8 @@ git pull origin development
 # Buat branch baru (ganti 'nama-page' sesuai halaman)
 git checkout -b page/nama-page
 
-
+# Jalanin tailwindcss
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 # pas sudah buat dan mau ngirim
 
 # Cek perubahan apa aja yang belum di-add 
