@@ -7,18 +7,27 @@
 </head>
 <body>
     <div class="relative" id="home">
-        <header class="fixed top-0 left-0 right-0">
+        <header class="fixed top-4 left-0 right-0 z-20">
             <div class="z-10 flex flex-row justify-around">
                 <h1 class="text-white text-2xl mt-4 tracking-widest font-meriawriter">ARKA & PUTRI</h1>
-                <nav class="flex gap-8 mt-4">
+                <nav class=" gap-8 mt-4 hidden md:flex">
                     <a href="#home">Home</a>
                     <a href="#story">Our Story</a>
                     <a href="#wedding">The Wedding</a>
                     <a href="#gallery">Gallery</a>
                     <a href="#wishes">Wishes</a>
                 </nav>
+                <img src="../aset/burger.png" alt="" class="w-12 h-12 md:hidden" id="burger">
             </div>
         </header>
+        <nav class="md:hidden fixed top-20 z-20 w-2/3 left-20 px-2 py-4 h-auto hidden flex-col items-center bg-linear-to-tr from-indigo-400/90 to-fuchsia-400 rounded-full" id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#story">Our Story</a>
+            <a href="#wedding">The Wedding</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#wishes">Wishes</a>
+        </nav>
+
         <div id="hero-content" class="flex justify-center items-center h-full">
             <div class="flex flex-col text-center">
                 <h3 class="text-white text-2xl font-meriawriter">The Wedding of</h3>
@@ -34,19 +43,19 @@
     </div>
 
 
-    <div class="h-[120vh] p-10 bg-linear-to-tr from-gray-50 to-gray-400">
-        <div class="h-screen flex justify-center">
+    <div class="md:h-[120vh] h-auto p-10 bg-linear-to-tr from-fuchsia-300 to-indigo-500">
+        <div class="min-h-screen flex justify-center">
             <div class="flex flex-col justify-between">
                 <h2 class="text-4xl text-center font-meriawriter text-indigo-900">BRIDE & GROOM</h2>
-                <div class="h-3/4 flex justify-center gap-8">
-                    <div class="flex flex-col justify-center items-center shadow-xl p-4">
+                <div class="h-[200vh] flex flex-col  md:flex-row md:h-3/4 justify-center gap-8">
+                    <div class="flex flex-col justify-center items-center shadow-xl p-4 bg-gray-300">
                         <img src="../aset/male.png" alt="" class=" h-[240px] w-60 rounded-full">
                         <h4 class="font-semibold">Arka Bumantara Poernama</h4>
                         <p class="text-neutral-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <p class="text-neutral-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="mt-40 text-4xl">❤️</div>
-                    <div class="flex flex-col justify-center items-center shadow-xl p-4">
+                    <div class="mt-30 text-4xl">❤️</div>
+                    <div class="flex flex-col justify-center items-center shadow-xl p-4 bg-gray-300">
                         <img src="../aset/female.png" alt="" class="h-[240px] w-60 rounded-full">
                         <h4 class="font-semibold">Putri Luna Djelita</h4>
                         <p class="text-neutral-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -57,17 +66,15 @@
         </div>
     </div>
 
-    <div id="story" class="bg-linear-to-tr from-gray-50 to-gray-400">
+    <div id="story" class="bg-linear-to-tr from-gray-200 to-indigo-500">
         <div class="flex flex-col p-8">
-            <!-- Header -->
             <header class="text-center mb-16">
                 <h1 class="text-4xl font-meriawriter text-indigo-900 tracking-wide">OUR STORY</h1>
             </header>
             
             <div class="max-w-5xl mx-auto">
-                <!-- How We Meet -->
-                <div class="timeline-section">
-                    <div class="section-header">
+                <div class="">
+                    <div class="">
                         <h2 class="text-2xl font-semibold ">How We Meet</h2>
                         <p class="text-sm font-semibold">07 July 2018</p>
                     </div>
@@ -75,11 +82,7 @@
                     <div class="flex gap-8 justify-around items-center">
                         <div class="w-full md:max-w-30 mb-6">
                             <p class="w-[40px] md:w-90">
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus distinctio aliquam aspernatur facere quo ipsum nobis porro in? Rerum facere quas libero neque velit dignissimos expedita non fuga iure.
                             </p>
                         </div>
                         <div class="w-full md:w-1/3 flex justify-center h-60">
@@ -88,9 +91,8 @@
                     </div>
                 </div>
                 
-                <!-- The First Date -->
-                <div class="timeline-section">
-                    <div class="section-header">
+                <div>
+                    <div>
                         <h2 class="text-2xl font-semibold">The First Date</h2>
                         <p class="text-sm font-semibold">07 August 2018</p>
                     </div>
@@ -101,19 +103,15 @@
                         </div>
                         <div class="w-full md:w-2/3 justify-center p-4 order-md-2 order-1">
                             <p>
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, vero totam! Officia doloremque qui nemo nam ipsum rerum deserunt, vel, unde, sint vero architecto. Eveniet sed esse facere illo vero?
                             </p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- The Proposal -->
-                <div class="timeline-section">
-                    <div class="section-header">
+
+                <div>
+                    <div>
                         <h2 class="text-2xl font-semibold">The Proposal</h2>
                         <p class="text-sm font-semibold">19 November 2020</p>
                     </div>
@@ -121,11 +119,7 @@
                     <div class="flex gap-8 justify-around items-center">
                         <div class="w-full md:max-w-30 mb-6">
                             <p class="w-[40px] md:w-90">
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-                                Bla Bla Bla Bla Bla Bla Bla Bla Bla
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde incidunt suscipit quo eveniet aperiam, quas laborum pariatur a id quis dignissimos beatae quae dolore, illum quos facilis molestiae? Id, vitae.
                             </p>
                         </div>
                         <div class="w-full md:w-1/3 flex justify-center h-60">
@@ -140,34 +134,36 @@
 
     <div id="wedding">
         <div class="banner">
-            <div id="hero-content" class="overlay flex justify-center items-center h-full">
+            <div class="overlay h-full">
                 <div class="flex flex-col text-center">
                     <h1 class="text-4xl font-meriawriter text-gray-300 tracking-wide">THE WEDDING</h1>
                     <p class="text-3xl font-meriawriter text-gray-300 tracking-wide">14 February 2030</p>
                 </div>
             </div>
         </div>
-        
-        <div class="h-[120vh] p-10 bg-linear-to-tr from-gray-50 to-gray-400">
-            <div class="h-screen flex justify-center">
-                <div class="flex flex-col justify-between">
-                    <div class="h-3/4 flex justify-center gap-8">
-                        <div class="bg-gray-400 rounded-md flex flex-col justify-center items-center shadow-xl p-4">
-                            <img src="../aset/ceremony.png" alt="" class=" h-[240px] w-60 rounded-full">
-                            <h4 class="text-2xl font-meriawriter tracking-wide">Ceremony Location</h4>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <div class="bg-gray-400 rounded-md flex flex-col justify-center items-center shadow-xl p-4">
-                            <img src="../aset/party.png" alt="" class="h-[240px] w-60 rounded-full">
-                            <h4 class="text-2xl font-meriawriter tracking-wide">After Event Party</h4>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
+
+        <div class="min-h-[120vh] p-10 bg-gradient-to-tr from-gray-200 to-indigo-500 flex items-center justify-center">
+            <div class="w-full max-w-4xl grid gap-8 md:grid-cols-2">
+
+              <div class="bg-gray-400 rounded-md flex flex-col items-center shadow-xl p-6 space-y-4">
+                <img src="../aset/ceremony.png" alt="Ceremony Location" class="h-60 w-60 rounded-full object-cover">
+                <h4 class="text-2xl font-bold tracking-wide">Ceremony Location</h4>
+                <div class="text-center space-y-1">
+                  <p>Widya Sabha</p>
+                  <p>Jl. Raya Kampus Unud Blok r No.88</p>
                 </div>
+              </div>
+              
+              <div class="bg-gray-400 rounded-md flex flex-col items-center shadow-xl p-6 space-y-4">
+                <img src="../aset/party.png" alt="After Event Party" class="h-60 w-60 rounded-full object-cover">
+                <h4 class="text-2xl font-bold tracking-wide">After Event Party</h4>
+                <div class="text-center space-y-1">
+                  <p>Gedung BG.1.1</p>
+                  <p>Jalan Raya Kampus Unud</p>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
     </div>
 
     <div id="gallery">
@@ -178,5 +174,19 @@
     <div id="wishes">
 
     </div>
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+      
+        burger.addEventListener('click', () => {
+          if (navLinks.classList.contains('hidden')) {
+            navLinks.classList.remove('hidden');
+            navLinks.classList.add('flex');
+          } else {
+            navLinks.classList.remove('flex');
+            navLinks.classList.add('hidden');
+          }
+        });
+      </script>
 </body>
 </html>
