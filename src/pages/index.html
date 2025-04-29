@@ -166,14 +166,63 @@
           </div>
     </div>
 
-    <div id="gallery">
-
+    <div id="gallery" class="px-6 py-10 bg-gradient-to-br from-gray-200 to-indigo-500">
+        <h2 class="font-meriawriter italic text-5xl text-center text-white mb-8">Gallery Photo</h2>
+        <div class="max-w-5xl mx-auto">
+            <!-- Grid untuk Galeri Foto -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 mb-3">
+                <!-- Gambar 1 -->
+                <div class="relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="../aset/imageprompt.png" class="h-[240px] w-full object-cover object-top">
+                </div>
+                <!-- Gambar 2 -->
+                <div class="relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="../aset/imageprompt.png" class="h-[240px] w-full object-cover object-top">
+                </div>
+                <!-- Gambar 3 -->
+                <div class="relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="../aset/imageprompt.png" class="h-[240px] w-full object-cover object-top">
+                </div>
+                <!-- Gambar 4 -->
+                <div class="relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="../aset/imageprompt.png" class="h-[240px] w-full object-cover object-top">
+                </div>
+                <!-- Gambar 5 -->
+                <div class="relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="../aset/imageprompt.png" class="h-[240px] w-full object-cover object-top">
+                </div>
+                <!-- Gambar 6 -->
+                <div class="relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="../aset/imageprompt.png" class="h-[240px] w-full object-cover object-top">
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <div id="wishes">
-
+    <div id="wishes" class="px-6 py-10 bg-white">
+        <h2 class="font-meriawriter italic text-5xl text-center text-blue-300 mb-10">Ucapan & Doa</h2>
+        <form class="max-w-5xl mx-auto bg-blue-600 p-6 rounded-lg shadow">
+          <div class="mb-4">
+            <label class="block text-sm font-medium mb-1 text-white">Nama</label>
+            <input type="text" placeholder="Masukkan nama Anda" class="w-full p-2 border rounded-md" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-sm font-medium mb-1 text-white">Wishes</label>
+            <textarea rows="4" placeholder="Tulis ucapan untuk mempelai..." class="w-full p-2 border rounded-md"></textarea>
+          </div>
+          <div class="mb-4">
+            <label for="confirmation" class="block text-white text-sm font-bold mb-2">Konfirmasi Kehadiran</label>
+            <select id="confirmation" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="hadir">Hadir</option>
+                <option value="tidak-hadir">Tidak Hadir</option>
+                <option value="masih-ragu">Masih Ragu</option>
+            </select>
+        </div>
+          <button type="submit" class="bg-amber-500 text-white px-4 py-2 rounded hover:bg-amber-950 transition">Kirim</button>
+        </form>
     </div>
+
     <script>
         const burger = document.getElementById('burger');
         const navLinks = document.getElementById('nav-links');
